@@ -8,7 +8,7 @@ class CreateOrderApi:
     def post_create_order(token=None,ingredients='No'):
         if ingredients == 'Yes':
             payload = {
-                "ingredients": ["61c0c5a71567675daaa70"]
+                "ingredients": ["61c0c5a71d1f82001bdaaa70"]
             }
         elif ingredients=='Error':
             payload = {
