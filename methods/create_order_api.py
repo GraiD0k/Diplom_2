@@ -18,5 +18,5 @@ class CreateOrderApi:
             payload = {
             }
         header = {"Authorization": token}
-        response = requests.post(Urls.URL_CREATE_ORDER,json=payload,headers=header)
+        response = requests.post(Urls.URL_CREATE_ORDER,json=payload,headers=header,verify=False)
         return response

@@ -11,5 +11,5 @@ class ChangeUserApi:
             "password": password
         }
         header = {"Authorization": token}
-        response = requests.patch(Urls.URL_CHANGE_USER,json=payload,headers=header)
+        response = requests.patch(Urls.URL_CHANGE_USER,json=payload,headers=header,verify=False)
         return response

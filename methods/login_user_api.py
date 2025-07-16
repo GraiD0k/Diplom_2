@@ -10,5 +10,5 @@ class LoginUserApi:
             "email": email,
             "password": password
         }
-        response = requests.post(Urls.URL_LOGIN_USER,json=payload)
+        response = requests.post(Urls.URL_LOGIN_USER,json=payload,verify=False)
         return response

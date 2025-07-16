@@ -1,5 +1,6 @@
 import pytest
 from faker import Faker
+import requests
 
 @pytest.fixture()
 def generate_random_email():

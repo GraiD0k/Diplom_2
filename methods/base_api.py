@@ -11,5 +11,5 @@ class BaseApi:
     "password": password,
     "name":name
 }
-        response = requests.post(Urls.URL_CREATE_USER,json=payload)
+        response = requests.post(Urls.URL_CREATE_USER,json=payload,verify=False)
         return response
