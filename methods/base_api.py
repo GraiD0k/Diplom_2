@@ -13,3 +13,10 @@ class BaseApi:
 }
         response = requests.post(Urls.URL_CREATE_USER,json=payload,verify=False)
         return response
+
+    @staticmethod
+    @allure.step('Вызываем метод удаления пользователя')
+    def delete_login(delete_token):
+        header = {"Authorization": delete_token}
+        response = requests.delete(Urls.URL_CHANGE_USER,headers=header,verify=False)
+        return response
